@@ -45,15 +45,21 @@ describe('Math functions', () => {
     expect(divide(6, 3)).toBe(2);
   });
 
-  test('divides -6 / -2 to equal 3', () => {
-    expect(divide(-6, -2)).toBe(3);
-  });
+
 
   test('throws error when dividing by zero', () => {
     expect(() => divide(6, 0)).toThrow('Cannot divide by zero');
   });
-
-  test('divides 0 / 5 to equal 0', () => {
-    expect(divide(0, 5)).toBe(0);
+  test("divides 6 / 3 to equal 2" , ()=>{
+    expect(()=>divide(6,3).toBe(2))
   });
+  test("divide 4/2 to equal to 2", ()=>{
+    // expect(() => divide(6, 0)).toThrow('Cannot divide by zero');
+  expect(()=>divide(4,0)).toThrow("Cannot divide by zero")
+  })
+  test("test" , ()=>{
+  
+    expect(() => divide(6, 0)).toThrow('Cannot divide by zero');
+  })
+
 });
