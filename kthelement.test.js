@@ -37,7 +37,13 @@ describe("findKthSmallest", () => {
 describe("find largest elememt" , ()=>{
 test("find 1st largest " , () => {
     expect(()=>findKthLargest([1,2,6,5,4,3,3] , -3)).toThrow("K is out of bounds")
-})
+});
+test("finds" , ()=>{
+  expect(()=>findKthLargest([] , 2)).toThrow("K is out of bounds")
+});
+test("finds" , ()=>{
+  expect(()=>findKthLargest([9,8,4,1,2,5,6,7,8,9,0] , -200)).toThrow("K is out of bounds")
+});
 })
 
 
